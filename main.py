@@ -60,6 +60,8 @@ def image_processing(filename, operation):
             img.save(f"static/{filename}")
             fileName = f"static/{filename}"
             return fileName
+        case _:
+            print("You do not have any access to the code")
 
 
 @app.route("/")
